@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form id="sortForm" onsubmit="myFunction()">
+    <h6>Input:</h6>
+    <input type="text" id = textInput name="input"><br>
+    <h6>Sort Type:</h6>
+    <select id = "sortType">
+        <option value="quick">Quick</option>
+        <option value="bubble">Bubble</option>
+        <option value="bucket">Bucket</option>
+    </select><br>
+    <h6>Value Type:</h6>
+    <select id = "valueType">
+        <option value="int">int</option>
+        <option value="dou">double</option>
+        <option value="str">string</option>
+    </select>
+    <input type="submit" id = "submitButton" value="Submit">
+    
+</form>
+
+<div class="demo"></div>
